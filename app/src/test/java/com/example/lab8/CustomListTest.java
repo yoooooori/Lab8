@@ -44,7 +44,7 @@ public class CustomListTest {
      * check if our list contains the added city
      */
     @Test
-    public void hasCityTest(){
+    public void hasCityTest() {
         list = MockCityList();
         City test = new City("Estevan", "SK");
         assertFalse(list.hasCity(test));
