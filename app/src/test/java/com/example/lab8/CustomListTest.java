@@ -68,4 +68,21 @@ public class CustomListTest {
         assertEquals(list.getCount(),listSize - 1);
     }
 
+    /**
+     * add 2 cities to list
+     * check if count is 2
+     * delete 2 cities from list
+     * check if count is 0
+     */
+    @Test
+    public void getCountTest() {
+        list = MockCityList();
+        assertEquals(list.getCount(), 0);
+        City city1 = new City("Estevan", "SK");
+        City city2 = new City("Esteban", "SB");
+        list.addCity(city1);
+        list.addCity(city2);
+        assertEquals(list.getCount(), 2);
+    }
+
 }
